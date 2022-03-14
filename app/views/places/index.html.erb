@@ -3,11 +3,13 @@
 <div class="container">
 <h1>Places</h1>
 <div class="container">
+
 <ul>
   <% for place in @places %>
     <li><a href="/places/<%= place.id %>"><%= place.name %></a></li>
   <% end %>
 </ul>
+   
 </div>
 <a type="button" class="btn btn-primary" href="/places/new">New place</a>
 </div>
