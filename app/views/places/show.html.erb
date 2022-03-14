@@ -1,7 +1,6 @@
 
 
 <% if @current_user %>
-
 <h1><%= @place.name %></h1>
 <h2>My Posts</h2>
 
@@ -14,8 +13,12 @@
     <p><%= post.description %></p>
 </div>
 
+<% end %>
 </div>
 </div>
+
+
+
 
 
 <a type="button" class="btn btn-primary" href="/posts/new?place_id=<%= @place.id %>">New post</a>
